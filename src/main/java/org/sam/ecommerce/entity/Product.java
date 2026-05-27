@@ -23,6 +23,7 @@ public class Product extends Base {
     String name;
     String description;
     BigDecimal price;
+    String slug;
     @JdbcTypeCode(SqlTypes.JSON)
     @Column(columnDefinition = "jsonb")
     Map<String, Object> attributes;
