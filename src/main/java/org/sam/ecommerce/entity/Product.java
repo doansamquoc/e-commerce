@@ -5,7 +5,6 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.SuperBuilder;
 
-import java.math.BigDecimal;
 import java.util.Set;
 
 @Entity
@@ -19,7 +18,6 @@ import java.util.Set;
 public class Product extends Base {
     String name;
     String description;
-    BigDecimal price;
     String slug;
     String option1Name;
     String option2Name;
