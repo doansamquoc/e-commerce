@@ -6,8 +6,6 @@ import lombok.experimental.FieldDefaults;
 import lombok.experimental.SuperBuilder;
 import org.sam.ecommerce.enums.Role;
 
-import java.util.List;
-
 @Entity
 @Getter
 @Setter
