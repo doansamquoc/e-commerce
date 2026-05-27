@@ -22,7 +22,4 @@ public class User extends Base {
     String email;
     String fullName;
     Role role;
-
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
-    List<Product> products;
 }

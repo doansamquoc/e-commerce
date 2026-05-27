@@ -30,11 +30,6 @@ public class Product extends Base {
     @Column(columnDefinition = "jsonb")
     Map<String, Object> attributes;
 
-    @CreatedBy
-    @ManyToOne
-    @JoinColumn(name = "created_by_id")
-    User user;
-
     @OneToMany(mappedBy = "product", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     Set<ProductImage> productImages;
 
