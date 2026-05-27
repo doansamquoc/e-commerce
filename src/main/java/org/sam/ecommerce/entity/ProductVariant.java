@@ -19,10 +19,13 @@ public class ProductVariant extends Base {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     Product product;
-
     String name;
     BigDecimal price;
+    Integer stock;
+    String sku;
     String option1;
     String option2;
     String option3;
+    @Version
+    Integer version;
 }
