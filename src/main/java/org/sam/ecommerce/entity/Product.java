@@ -19,6 +19,15 @@ public class Product extends Base {
     String name;
     String description;
     String slug;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    Category category;
+
+    @ManyToOne
+    @JoinColumn(name = "image_id")
+    Image image;
+
     String option1Name;
     String option2Name;
     String option3Name;
