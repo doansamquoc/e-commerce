@@ -22,6 +22,8 @@ public class ProductVariant extends Base {
     String name;
     BigDecimal price;
     Integer stock;
+    @ManyToOne
+    Image image;
     String sku;
     String option1;
     String option2;
