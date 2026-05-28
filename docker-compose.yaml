@@ -1,0 +1,15 @@
+version: "8.3"
+services:
+  ecommerce-database:
+    container_name: ecommerce-database
+    image: postgres:17-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: ecommerce
+    volumes:
+      - ecommerce-database-data:/var/lib/postgresql
+volumes:
+  ecommerce-database-data:
